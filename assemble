@@ -1,10 +1,9 @@
 #!/bin/bash
 
 set -eo pipefail
+shopt -s dotglob
 
 mv /tmp/src/* /opt/app-root/src/
-
-ls -l /opt/app-root/src
 
 ./mvnw clean package
 
