@@ -9,7 +9,6 @@ mv /tmp/src/* /opt/app-root/src/
 if [ -d /tmp/artifacts/.m2 ]; then
   echo "---> Restoring maven dependencies downloaded in the previous build..."
   mv /tmp/artifacts/.m2 "$HOME"/
-  ls -la "$HOME"
 fi
 
 ./mvnw clean package
