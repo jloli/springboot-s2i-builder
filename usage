@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cat <<EOF
+Simple S2I builder for a Spring Boot application.
+EOF

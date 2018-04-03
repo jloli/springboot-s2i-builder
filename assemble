@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -eo pipefail
+
+mv /tmp/src/* /opt/app-root/src/
+
+./mvnw clean package
+
+cp -a /opt/app-root/src/target/*.jar /opt/app-root/app.jar
