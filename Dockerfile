@@ -18,6 +18,8 @@ COPY run /usr/libexec/s2i/
 
 COPY usage /usr/libexec/s2i/
 
+COPY save-artifacts /usr/libexec/s2i/
+
 RUN chown -R 1001:1001 /opt/app-root
 
 USER 1001
